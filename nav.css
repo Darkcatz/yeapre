@@ -1,0 +1,155 @@
+.navbar{
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    height: inherit;
+    transition: all 0.5s;
+    border-radius: 5px;
+    text-align: center; 
+    z-index: 1;
+    font-family: Helvetica, Arial;
+    align-self: center;
+    
+
+    
+}
+.nbi{
+    float: left;
+    border-radius: 5px;
+    transition: all 0.5s;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    list-style: none;
+    
+    
+ 
+}
+.navbar li{
+  display: inline;
+
+}
+.nbi a{
+    font-size: 20px;
+    position: inherit;
+    color: black;
+    text-align: center;
+    margin-top: 0px;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    border-radius: 2px;
+}
+.nbi a:hover, .dropdwn:hover .foodbtn{
+    background-color: #575757;
+    transition: 0.5s;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s; 
+}
+body {
+  margin: 0;
+  font-family: Helvetica, Arial;
+}
+
+/*DROPDOWN   */
+.food{
+  position: relative;
+  display: inline-block;
+
+}
+.dropdwn{
+  float: left;
+  overflow: hidden;
+}
+@media screen and (max-width: 580px) {
+  .navbar {
+    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+  }
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navbar-right {
+    float: none;
+  }
+}
+
+
+
+.dropdwn .foodbtn{
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color:black;
+  padding: 12px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  border-radius: 2px;
+}
+
+
+.foodCont{
+  display: none;
+  position:absolute;
+  background-color: #f9f9f9;
+  min-width: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: width 280ms ease-in-out 400ms;
+  list-style: none;
+}
+
+.foodCont a{
+  float: none;
+  clear:both;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+  list-style:none;
+
+}
+
+.foodCont a:hover{
+  background-color: #575757;
+}
+.dropdwn:hover .foodCont{
+  display: block;
+  transition: 1s;
+  clear: both;
+  transition-timing-function: ease-in-out;
+  
+}
+
+/*End*/
+
+
+
+
+
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
