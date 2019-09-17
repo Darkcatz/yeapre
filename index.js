@@ -1,13 +1,17 @@
-//nav bar
-window.onscroll = function() {scrollFun()};
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
 
-function scrollFun(){
-    if(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10){
-        document.getElementsByClassName("navbar").style.padding = "30px 10px";
-        document.getElementsByClassName("logo").style.fontSize = "25px";
+// Get the navbar
+var nb = document.getElementById("navbar");
 
-    } else {
-        document.getElementsByClassName("navbar").style.padding = "12px 16px";
-        document.getElementsByClassName("logo").style.fontSize = "35px";
-    }
+// Get the offset position of the navbar
+var sticky = nb.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    nb.classList.add("sticky")
+  } else {
+    nb.classList.remove("sticky");
+  }
 }
