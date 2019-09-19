@@ -11,9 +11,10 @@
     text-align: center;
     color: black;
     list-style: none;
+    display:block;
 }
 .active{
-  border-bottom: 2px solid #5BC0EB;
+  border-bottom: 1px solid #363636;
 }
 .navbar li{
   display: inline;
