@@ -1,20 +1,16 @@
 body{
     overflow: auto;
+    margin: 0;
 }
-.header{
-    max-height: 150px;
-    background: white;
-    padding: 0px;
-    position: relative;
 
-}
 .logo{
     padding: 10px;
     padding-left: 50px;
     padding-right: 50px;
     margin-left: 100px;
     float: left;
-    height: 75px;
+    height: 40px;
+    transition: all 1s;
 
 }
 .logo:hover{
@@ -24,13 +20,14 @@ body{
 .center{
     text-align: center;
 }
-.idk{
+#idk{
     float: none;
     position: absolute;
-    margin-top: 45px;
-    top:inherit;
+    top: inherit;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 45px;
+    transition:all 1s;
 }
 .start{
     height: 100vh;
@@ -47,18 +44,24 @@ body{
     width: 100%;
     top:0px;
     bottom: 0%;
-    background-image: url("/imgs/Beautiful-River-Scenery-Wallpaper.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: white;
     
 }
-
+.mission-statement{
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+    color: black;
+    font-size: 25px;
+    
+}
+.mission-statement-title{
+    font-size: 35px;
+}
 .title{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
     color: white;
-    font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
     top: 50%;
@@ -69,8 +72,7 @@ body{
     padding: 20px;
     text-align: center;
 }
-.spacer{
-    height: 95px;
-    width: 100%;
-    color: black;
+#title{
+    font-size: 50px;
+
 }
